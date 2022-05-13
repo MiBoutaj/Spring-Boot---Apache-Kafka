@@ -1,0 +1,5 @@
+cmd pour cree projet maven
+mvn archetype:generate -DgroupId=com.application -DartifactId=KafkaServices -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+docker exec --interactive --tty kafka_ks kafka-console-consumer --bootstrap-server kafka:9092 --topic kafkaTopic --from-beginning
+docker exec --interactive --tty kafka_ks kafka-console-producer --bootstrap-server kafka:9092 --topic kafkaTopic
